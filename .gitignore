@@ -1,0 +1,6 @@
+# Godot engine cache and generated output
+.godot/
+tools/test_reports/
+tools/shots/
+*.translation
+export_presets.cfg.bak

@@ -1,0 +1,1145 @@
+{
+  "pack": "Basement Farm Generated Assets",
+  "version": "0.5.0",
+  "generated": "2026-11-24T04:29:20.119557+00:00",
+  "engine": "Godot 4 / glTF 2.0",
+  "units": "metres",
+  "axes": {
+    "up": "+Y",
+    "forward": "-Z (Godot forward)",
+    "right": "+X"
+  },
+  "source_pipeline": "Riverborn-style procedural mesh, Rig, Clip, GLB export, validation, preview",
+  "assets": [
+    {
+      "id": "basement_slime",
+      "file": "creatures/slime/basement_slime.glb",
+      "name": "Blind heat slime",
+      "kind": "creature",
+      "description": "A blind, warmth- and scent-seeking cave prey animal.",
+      "rigged": true,
+      "triangles": 552,
+      "vertices": 1656,
+      "bones": 7,
+      "animations": [
+        {
+          "name": "idle",
+          "duration_s": 2.6,
+          "loop": true,
+          "description": "Slow pulse and floor contact."
+        },
+        {
+          "name": "crawl",
+          "duration_s": 0.78,
+          "loop": true,
+          "description": "In-place muscle wave for CharacterBody movement."
+        },
+        {
+          "name": "lure",
+          "duration_s": 1.2,
+          "loop": true,
+          "description": "Scent-reading pose while following bait."
+        },
+        {
+          "name": "strike",
+          "duration_s": 0.44,
+          "loop": false,
+          "description": "Compression and forward attack throw."
+        },
+        {
+          "name": "crouch",
+          "duration_s": 0.46,
+          "loop": false,
+          "description": "Pounce wind-up coil, held on the final frame."
+        },
+        {
+          "name": "leap",
+          "duration_s": 0.48,
+          "loop": false,
+          "description": "Airborne stretch with trailing skirts and landing tuck."
+        },
+        {
+          "name": "hurt",
+          "duration_s": 0.36,
+          "loop": false,
+          "description": "Asymmetric hit recoil."
+        },
+        {
+          "name": "death",
+          "duration_s": 1.1,
+          "loop": false,
+          "description": "Gel collapse after lethal damage."
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": {
+        "ok": true,
+        "worst_key_error_mm": 0.41247,
+        "samples": [
+          {
+            "clip": "idle",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "idle",
+            "time_s": 0.667,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "idle",
+            "time_s": 1.3,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "idle",
+            "time_s": 1.933,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.2,
+            "bbox_error_mm": 0.1579
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.4,
+            "bbox_error_mm": 0.4125
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.6,
+            "bbox_error_mm": 0.3327
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.3,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.6,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.9,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.1,
+            "bbox_error_mm": 0.0885
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.233,
+            "bbox_error_mm": 0.4012
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.333,
+            "bbox_error_mm": 0.3509
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.1,
+            "bbox_error_mm": 0.0398
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.233,
+            "bbox_error_mm": 0.062
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.333,
+            "bbox_error_mm": 0.1047
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.133,
+            "bbox_error_mm": 0.1156
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.233,
+            "bbox_error_mm": 0.0194
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.367,
+            "bbox_error_mm": 0.2186
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.1,
+            "bbox_error_mm": 0.2024
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.167,
+            "bbox_error_mm": 0.1698
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.267,
+            "bbox_error_mm": 0.4044
+          },
+          {
+            "clip": "death",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "death",
+            "time_s": 0.267,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "death",
+            "time_s": 0.533,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "death",
+            "time_s": 0.833,
+            "bbox_error_mm": 0.0
+          }
+        ]
+      },
+      "preview": null,
+      "min_m": [
+        -0.4991,
+        0.0,
+        -0.7814
+      ],
+      "max_m": [
+        0.5022,
+        0.6012,
+        0.7902
+      ],
+      "dimensions_m": {
+        "width_x": 1.0013,
+        "height_y": 0.6012,
+        "length_z": 1.5716
+      }
+    },
+    {
+      "id": "salvaged_workbench",
+      "file": "props/salvaged_workbench.glb",
+      "name": "Salvaged workbench",
+      "kind": "base_prop",
+      "description": "A rebuilt timber and angle-iron bench for shaping bolts, medicine, and insulation.",
+      "rigged": false,
+      "triangles": 866,
+      "vertices": 2598,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.83,
+        -0.001,
+        -0.72
+      ],
+      "max_m": [
+        0.83,
+        1.3333,
+        0.363
+      ],
+      "dimensions_m": {
+        "width_x": 1.66,
+        "height_y": 1.3343,
+        "length_z": 1.083
+      }
+    },
+    {
+      "id": "wall_insulation_patch",
+      "file": "props/wall_insulation_patch.glb",
+      "name": "Wall insulation patch",
+      "kind": "base_upgrade",
+      "description": "A hide, cloth, timber and scrap repair panel installed over a basement draft.",
+      "rigged": false,
+      "triangles": 486,
+      "vertices": 1458,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.5223,
+        -0.0096,
+        -0.1125
+      ],
+      "max_m": [
+        0.4842,
+        1.1186,
+        0.041
+      ],
+      "dimensions_m": {
+        "width_x": 1.0066,
+        "height_y": 1.1283,
+        "length_z": 0.1535
+      }
+    },
+    {
+      "id": "hunt_snare",
+      "file": "props/hunt_snare.glb",
+      "name": "Hunt floor snare",
+      "kind": "hunt_prop",
+      "description": "A bait-side wire loop and tension spool that briefly holds prey in the hunt chamber.",
+      "rigged": false,
+      "triangles": 546,
+      "vertices": 1638,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.6874,
+        0.0,
+        -0.5661
+      ],
+      "max_m": [
+        0.6372,
+        0.26,
+        0.5759
+      ],
+      "dimensions_m": {
+        "width_x": 1.3246,
+        "height_y": 0.26,
+        "length_z": 1.1419
+      }
+    },
+    {
+      "id": "warm_storage_rack",
+      "file": "props/warm_storage_rack.glb",
+      "name": "Warm storage rack",
+      "kind": "base_upgrade",
+      "description": "A salvaged shelf with ration crates, supplies, a furnace-line coil, and a small heat lamp.",
+      "rigged": false,
+      "triangles": 932,
+      "vertices": 2796,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.8541,
+        -0.004,
+        -0.3436
+      ],
+      "max_m": [
+        0.8544,
+        2.04,
+        0.249
+      ],
+      "dimensions_m": {
+        "width_x": 1.7085,
+        "height_y": 2.044,
+        "length_z": 0.5926
+      }
+    },
+    {
+      "id": "frozen_maintenance_portal",
+      "file": "props/frozen_maintenance_portal.glb",
+      "name": "Frozen maintenance portal",
+      "kind": "cave_prop",
+      "description": "A damaged support bay with frozen pipes and a weak emergency lamp, marking the route beneath the house.",
+      "rigged": false,
+      "triangles": 1294,
+      "vertices": 3882,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -1.977,
+        -0.0327,
+        -0.522
+      ],
+      "max_m": [
+        1.9514,
+        2.9695,
+        0.405
+      ],
+      "dimensions_m": {
+        "width_x": 3.9284,
+        "height_y": 3.0022,
+        "length_z": 0.927
+      }
+    },
+    {
+      "id": "frozen_maintenance_cart",
+      "file": "props/frozen_maintenance_cart.glb",
+      "name": "Frozen maintenance cart",
+      "kind": "cave_prop",
+      "description": "An abandoned service cart with a dead battery, frozen canisters, and a severed route cable.",
+      "rigged": false,
+      "triangles": 1280,
+      "vertices": 3840,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.8498,
+        0.0133,
+        -0.6547
+      ],
+      "max_m": [
+        0.8077,
+        1.2618,
+        0.6012
+      ],
+      "dimensions_m": {
+        "width_x": 1.6575,
+        "height_y": 1.2485,
+        "length_z": 1.2559
+      }
+    },
+    {
+      "id": "furnace_heat_reclaimer",
+      "file": "props/furnace_heat_reclaimer.glb",
+      "name": "C-4 furnace heat reclaimer",
+      "kind": "expedition_upgrade",
+      "description": "A recovered maintenance heat exchanger that makes the home furnace burn longer and warmer.",
+      "rigged": false,
+      "triangles": 1198,
+      "vertices": 3594,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.6012,
+        -0.21,
+        -0.365
+      ],
+      "max_m": [
+        0.5488,
+        1.1679,
+        0.23
+      ],
+      "dimensions_m": {
+        "width_x": 1.15,
+        "height_y": 1.3779,
+        "length_z": 0.595
+      }
+    },
+    {
+      "id": "bedside_survival_kit_closed",
+      "file": "props/bedside_survival_kit_closed.glb",
+      "name": "Closed bedside survival kit",
+      "kind": "base_prop",
+      "description": "A low repaired footlocker beside the cot, holding the first-night tools.",
+      "rigged": false,
+      "triangles": 200,
+      "vertices": 600,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.5755,
+        -0.0074,
+        -0.45
+      ],
+      "max_m": [
+        0.5755,
+        0.6125,
+        0.3775
+      ],
+      "dimensions_m": {
+        "width_x": 1.151,
+        "height_y": 0.6199,
+        "length_z": 0.8275
+      }
+    },
+    {
+      "id": "bedside_survival_kit_open",
+      "file": "props/bedside_survival_kit_open.glb",
+      "name": "Opened bedside survival kit",
+      "kind": "base_prop",
+      "description": "The opened bedside kit with the flashlight and machete laid out inside.",
+      "rigged": false,
+      "triangles": 400,
+      "vertices": 1200,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.5755,
+        -0.0074,
+        -0.45
+      ],
+      "max_m": [
+        0.5755,
+        1.179,
+        0.5604
+      ],
+      "dimensions_m": {
+        "width_x": 1.151,
+        "height_y": 1.1863,
+        "length_z": 1.0104
+      }
+    },
+    {
+      "id": "kitchen_bench",
+      "file": "props/kitchen_bench.glb",
+      "name": "Cricket kitchen bench",
+      "kind": "base_prop",
+      "description": "A scavenged prep board, furnace-fed pot, knife block and coat-wire curing rack.",
+      "rigged": false,
+      "triangles": 2262,
+      "vertices": 6786,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.84,
+        -0.0004,
+        -0.448
+      ],
+      "max_m": [
+        0.84,
+        1.5704,
+        0.435
+      ],
+      "dimensions_m": {
+        "width_x": 1.68,
+        "height_y": 1.5708,
+        "length_z": 0.883
+      }
+    },
+    {
+      "id": "cave_trade_drop",
+      "file": "props/cave_trade_drop.glb",
+      "name": "Cave trade drop",
+      "kind": "base_prop",
+      "description": "Bolted steel drop box on a pallet, with a clamp, a paper slot and faded buyer paint.",
+      "rigged": false,
+      "triangles": 368,
+      "vertices": 1104,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.653,
+        0.0,
+        -0.45
+      ],
+      "max_m": [
+        0.653,
+        0.6787,
+        0.45
+      ],
+      "dimensions_m": {
+        "width_x": 1.306,
+        "height_y": 0.6787,
+        "length_z": 0.9
+      }
+    },
+    {
+      "id": "nest_breach",
+      "file": "props/nest_breach.glb",
+      "name": "Nest breach",
+      "kind": "base_prop",
+      "description": "A ragged hole of broken blockwork, stained ice and a warm throat behind it.",
+      "rigged": false,
+      "triangles": 402,
+      "vertices": 1206,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -1.0573,
+        -0.02,
+        -0.4839
+      ],
+      "max_m": [
+        1.0636,
+        2.4996,
+        0.255
+      ],
+      "dimensions_m": {
+        "width_x": 2.1208,
+        "height_y": 2.5196,
+        "length_z": 0.7389
+      }
+    },
+    {
+      "id": "gland_lantern",
+      "file": "props/gland_lantern.glb",
+      "name": "Gland lantern",
+      "kind": "tool_prop",
+      "description": "A chitin cage around one heat gland, with a wire bail for the belt.",
+      "rigged": false,
+      "triangles": 638,
+      "vertices": 1914,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.082,
+        0.012,
+        -0.0799
+      ],
+      "max_m": [
+        0.082,
+        0.3814,
+        0.0799
+      ],
+      "dimensions_m": {
+        "width_x": 0.164,
+        "height_y": 0.3694,
+        "length_z": 0.1599
+      }
+    },
+    {
+      "id": "cricket_net",
+      "file": "props/cricket_net.glb",
+      "name": "Cricket net",
+      "kind": "tool_prop",
+      "description": "A worn wooden shaft, a steel hoop and a slack gauze bag for taking a tray alive.",
+      "rigged": false,
+      "triangles": 464,
+      "vertices": 1392,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.2128,
+        -0.0016,
+        0.0411
+      ],
+      "max_m": [
+        0.2128,
+        1.3418,
+        0.4
+      ],
+      "dimensions_m": {
+        "width_x": 0.4257,
+        "height_y": 1.3434,
+        "length_z": 0.3589
+      }
+    },
+    {
+      "id": "cinder_burrower",
+      "file": "creatures/cinder_burrower/cinder_burrower.glb",
+      "name": "Cinder burrower",
+      "kind": "creature",
+      "description": "The breach variant: the same blind burrower, burnt orange with hot seams.",
+      "rigged": true,
+      "triangles": 552,
+      "vertices": 1656,
+      "bones": 7,
+      "animations": [
+        {
+          "name": "idle",
+          "duration_s": 2.6,
+          "loop": true,
+          "description": "Slow pulse and floor contact."
+        },
+        {
+          "name": "crawl",
+          "duration_s": 0.78,
+          "loop": true,
+          "description": "In-place muscle wave for CharacterBody movement."
+        },
+        {
+          "name": "lure",
+          "duration_s": 1.2,
+          "loop": true,
+          "description": "Scent-reading pose while following bait."
+        },
+        {
+          "name": "strike",
+          "duration_s": 0.44,
+          "loop": false,
+          "description": "Compression and forward attack throw."
+        },
+        {
+          "name": "crouch",
+          "duration_s": 0.46,
+          "loop": false,
+          "description": "Pounce wind-up coil, held on the final frame."
+        },
+        {
+          "name": "leap",
+          "duration_s": 0.48,
+          "loop": false,
+          "description": "Airborne stretch with trailing skirts and landing tuck."
+        },
+        {
+          "name": "hurt",
+          "duration_s": 0.36,
+          "loop": false,
+          "description": "Asymmetric hit recoil."
+        },
+        {
+          "name": "death",
+          "duration_s": 1.1,
+          "loop": false,
+          "description": "Gel collapse after lethal damage."
+        }
+      ],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": {
+        "ok": true,
+        "worst_key_error_mm": 0.41247,
+        "samples": [
+          {
+            "clip": "idle",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "idle",
+            "time_s": 0.667,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "idle",
+            "time_s": 1.3,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "idle",
+            "time_s": 1.933,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.2,
+            "bbox_error_mm": 0.1579
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.4,
+            "bbox_error_mm": 0.4125
+          },
+          {
+            "clip": "crawl",
+            "time_s": 0.6,
+            "bbox_error_mm": 0.3327
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.3,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.6,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "lure",
+            "time_s": 0.9,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.1,
+            "bbox_error_mm": 0.0885
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.233,
+            "bbox_error_mm": 0.4012
+          },
+          {
+            "clip": "strike",
+            "time_s": 0.333,
+            "bbox_error_mm": 0.3509
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.1,
+            "bbox_error_mm": 0.0398
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.233,
+            "bbox_error_mm": 0.062
+          },
+          {
+            "clip": "crouch",
+            "time_s": 0.333,
+            "bbox_error_mm": 0.1047
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.133,
+            "bbox_error_mm": 0.1156
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.233,
+            "bbox_error_mm": 0.0194
+          },
+          {
+            "clip": "leap",
+            "time_s": 0.367,
+            "bbox_error_mm": 0.2186
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.1,
+            "bbox_error_mm": 0.2024
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.167,
+            "bbox_error_mm": 0.1698
+          },
+          {
+            "clip": "hurt",
+            "time_s": 0.267,
+            "bbox_error_mm": 0.4044
+          },
+          {
+            "clip": "death",
+            "time_s": 0.0,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "death",
+            "time_s": 0.267,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "death",
+            "time_s": 0.533,
+            "bbox_error_mm": 0.0
+          },
+          {
+            "clip": "death",
+            "time_s": 0.833,
+            "bbox_error_mm": 0.0
+          }
+        ]
+      },
+      "preview": null,
+      "min_m": [
+        -0.4991,
+        0.0,
+        -0.7814
+      ],
+      "max_m": [
+        0.5022,
+        0.6012,
+        0.7902
+      ],
+      "dimensions_m": {
+        "width_x": 1.0013,
+        "height_y": 0.6012,
+        "length_z": 1.5716
+      }
+    },
+    {
+      "id": "cold_store_jar_shelf",
+      "file": "props/cold_store_jar_shelf.glb",
+      "name": "Cold store jar shelf",
+      "kind": "base_prop",
+      "description": "Timber shelving in the root cellar, holding sealed jars of preserved stock.",
+      "rigged": false,
+      "triangles": 700,
+      "vertices": 2100,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.61,
+        0.0,
+        -0.25
+      ],
+      "max_m": [
+        0.61,
+        1.8,
+        0.05
+      ],
+      "dimensions_m": {
+        "width_x": 1.22,
+        "height_y": 1.8,
+        "length_z": 0.3
+      }
+    },
+    {
+      "id": "cold_store_cold_frame",
+      "file": "props/cold_store_cold_frame.glb",
+      "name": "Cold store cold frame",
+      "kind": "base_prop",
+      "description": "A low timber frame under a sloped glass lid, for holding a bed of cold-hardy greens.",
+      "rigged": false,
+      "triangles": 122,
+      "vertices": 366,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.55,
+        0.0,
+        -0.382
+      ],
+      "max_m": [
+        0.55,
+        0.52,
+        0.362
+      ],
+      "dimensions_m": {
+        "width_x": 1.1,
+        "height_y": 0.52,
+        "length_z": 0.744
+      }
+    },
+    {
+      "id": "cold_store_drain_grate",
+      "file": "props/cold_store_drain_grate.glb",
+      "name": "Cold store drain grate",
+      "kind": "cave_prop",
+      "description": "A flush iron grate over the cellar drain, two slats rusted through.",
+      "rigged": false,
+      "triangles": 96,
+      "vertices": 288,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.3,
+        0.0,
+        -0.3
+      ],
+      "max_m": [
+        0.3,
+        0.045,
+        0.3
+      ],
+      "dimensions_m": {
+        "width_x": 0.6,
+        "height_y": 0.045,
+        "length_z": 0.6
+      }
+    },
+    {
+      "id": "cold_store_sealed_crate",
+      "file": "props/cold_store_sealed_crate.glb",
+      "name": "Cold store sealed crate",
+      "kind": "cave_prop",
+      "description": "A timber crate with iron bands and a pale wax seal, left untouched in the cellar.",
+      "rigged": false,
+      "triangles": 60,
+      "vertices": 180,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.34,
+        -0.01,
+        -0.25
+      ],
+      "max_m": [
+        0.34,
+        0.67,
+        0.305
+      ],
+      "dimensions_m": {
+        "width_x": 0.68,
+        "height_y": 0.68,
+        "length_z": 0.555
+      }
+    },
+    {
+      "id": "order_parcel",
+      "file": "props/order_parcel.glb",
+      "name": "Order parcel",
+      "kind": "prop",
+      "description": "A kraft parcel taped shut with a paper label, packed for a cave order.",
+      "rigged": false,
+      "triangles": 48,
+      "vertices": 144,
+      "bones": 0,
+      "animations": [],
+      "validation": {
+        "ok": true,
+        "issues": []
+      },
+      "animation_verification": null,
+      "preview": null,
+      "min_m": [
+        -0.15,
+        0.0,
+        -0.125
+      ],
+      "max_m": [
+        0.15,
+        0.226,
+        0.128
+      ],
+      "dimensions_m": {
+        "width_x": 0.3,
+        "height_y": 0.226,
+        "length_z": 0.253
+      }
+    }
+  ],
+  "textures": [
+    {
+      "id": "order_note",
+      "file": "props/order_note.png",
+      "name": "Cave order note",
+      "kind": "texture",
+      "description": "Ruled paper with handwritten order lines, stains, a fold and a torn corner."
+    }
+  ]
+}

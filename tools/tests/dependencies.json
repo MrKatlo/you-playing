@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "_notes": [
+    "Dependency map for selective test runs. 'files' are the game files a suite actually exercises;",
+    "'depends_on' names suites whose behaviour this one builds on, so a change that reaches a lower",
+    "suite also selects the suites above it. Selection matches whole path fragments, not filenames."
+  ],
+  "suites": {
+    "workflow_rail": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_rail.gd",
+      "title": "two-station rail, repairs, economy, hazards and version 12 recovery",
+      "files": [
+        "scripts/rail_system.gd",
+        "scripts/rail_state.gd",
+        "scripts/rail_cart.gd",
+        "scripts/rail_station.gd",
+        "scripts/rail_world.gd",
+        "scripts/rail_encounters.gd",
+        "scripts/rail_trading.gd",
+        "scripts/rail_workshop.gd",
+        "scripts/rail_safety.gd",
+        "scripts/echo_hunter.gd",
+        "scripts/farm_state.gd",
+        "scripts/player.gd",
+        "scripts/basement.gd",
+        "scripts/basement_menu.gd"
+      ],
+      "depends_on": [
+        "unit_survival",
+        "unit_c3_story"
+      ]
+    },
+    "unit_survival": {
+      "level": "unit",
+      "script": "res://tools/tests/unit_survival.gd",
+      "title": "survival model: heat, hunger, trays, save shape",
+      "files": [
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": []
+    },
+    "unit_crafting": {
+      "level": "unit",
+      "script": "res://tools/tests/unit_crafting.gd",
+      "title": "workbench model: recipe costs, yields and gates",
+      "files": [
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": []
+    },
+    "unit_weapons": {
+      "level": "unit",
+      "script": "res://tools/tests/unit_weapons.gd",
+      "title": "weapon model: ammunition, driver wear, snare state",
+      "files": [
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": []
+    },
+    "workflow_interaction": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_interaction.gd",
+      "title": "doors, stations, cave threshold and doorway clearance",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/player.gd",
+        "scenes/basement.tscn"
+      ],
+      "depends_on": []
+    },
+    "workflow_survival": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_survival.gd",
+      "title": "harvest, butcher, orders, survival save round trip",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": [
+        "unit_survival"
+      ]
+    },
+    "workflow_crafting": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_crafting.gd",
+      "title": "crafting at the real bench, and the bolt loadout",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": [
+        "unit_crafting"
+      ]
+    },
+    "workflow_weapons": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_weapons.gd",
+      "title": "machete swings, tool slots and hit reactions",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/player.gd",
+        "scripts/burrower.gd"
+      ],
+      "depends_on": [
+        "unit_weapons"
+      ]
+    },
+    "workflow_creatures": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_creatures.gd",
+      "title": "tray animals and the hostile burrower",
+      "files": [
+        "scripts/burrower.gd",
+        "scripts/basement.gd",
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": []
+    },
+    "workflow_ui": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_ui.gd",
+      "title": "HUD readout, title menu and pause menu",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/basement_menu.gd",
+        "scripts/player.gd"
+      ],
+      "depends_on": []
+    },
+    "unit_c2_culture": {
+      "level": "unit",
+      "script": "res://tools/tests/unit_c2_culture.gd",
+      "title": "C2 culture model: netting, seeding, kitchen, eating, save v8",
+      "files": [
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": [
+        "unit_survival"
+      ]
+    },
+    "workflow_c2_culture": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_c2_culture.gd",
+      "title": "C2 culture workflow: net a tray, found a colony",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scenes/basement.tscn"
+      ],
+      "depends_on": [
+        "unit_c2_culture"
+      ]
+    },
+    "unit_c3_story": {
+      "level": "unit",
+      "script": "res://tools/tests/unit_c3_story.gd",
+      "title": "C3 story model: stage machine, chain state, save v10",
+      "files": [
+        "scripts/farm_state.gd",
+        "scripts/story_state.gd"
+      ],
+      "depends_on": [
+        "unit_c2_culture"
+      ]
+    },
+    "workflow_c1_controls": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_c1_controls.gd",
+      "title": "physical levers for the inner door, outer shutter and snare",
+      "files": [
+        "scripts/mechanical_lever.gd",
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scripts/player.gd"
+      ],
+      "depends_on": [
+        "workflow_interaction",
+        "unit_weapons"
+      ]
+    },
+    "workflow_c3_story": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_c3_story.gd",
+      "title": "C3 first night: banging pair, chain, crank gate",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scripts/story_state.gd",
+        "scenes/basement.tscn"
+      ],
+      "depends_on": [
+        "unit_c3_story",
+        "workflow_c1_controls"
+      ]
+    },
+    "playthrough_c3_night": {
+      "level": "workflow",
+      "script": "res://tools/tests/playthrough_c3_night.gd",
+      "title": "C3 first night played end to end",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scripts/story_state.gd",
+        "scenes/basement.tscn"
+      ],
+      "depends_on": [
+        "workflow_c3_story"
+      ]
+    },
+    "unit_c4_cold_store": {
+      "level": "unit",
+      "script": "res://tools/tests/unit_c4_cold_store.gd",
+      "title": "C4 cold store model: jars, crate loot, patch-gated frame, save shape",
+      "files": [
+        "scripts/farm_state.gd"
+      ],
+      "depends_on": [
+        "unit_survival"
+      ]
+    },
+    "workflow_c4_cold_store": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_c4_cold_store.gd",
+      "title": "C4 cold store: doorway, props, searches and the cold frame",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scenes/basement.tscn"
+      ],
+      "depends_on": [
+        "unit_c4_cold_store",
+        "workflow_interaction"
+      ]
+    },
+    "e2e_gameplay": {
+      "level": "e2e",
+      "script": "res://tools/tests/e2e_gameplay.gd",
+      "title": "the preserved full gameplay run over every module",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/player.gd",
+        "scripts/burrower.gd",
+        "scripts/farm_state.gd",
+        "scripts/basement_menu.gd",
+        "scenes/basement.tscn"
+      ],
+      "depends_on": [
+        "workflow_interaction",
+        "workflow_survival",
+        "workflow_crafting",
+        "workflow_weapons",
+        "workflow_creatures",
+        "workflow_ui",
+        "workflow_c1_controls",
+        "unit_c2_culture",
+        "workflow_c2_culture"
+      ]
+    },
+    "workflow_phase_a": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_phase_a.gd",
+      "title": "physical chain persistence, fitting, controller input and multiple corpses",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scripts/player.gd",
+        "scripts/bulkhead_crank.gd",
+        "scripts/mechanical_lever.gd",
+        "scripts/farm_pickup.gd",
+        "scripts/basement_input.gd"
+      ],
+      "depends_on": [
+        "unit_c3_story"
+      ]
+    },
+    "workflow_chain_link": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_chain_link.gd",
+      "title": "held chain link, dropping and retrieval",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scripts/player.gd",
+        "scripts/bulkhead_crank.gd",
+        "scripts/mechanical_lever.gd",
+        "scripts/farm_pickup.gd",
+        "scripts/basement_input.gd"
+      ],
+      "depends_on": [
+        "unit_c3_story"
+      ]
+    },
+    "workflow_order_box": {
+      "level": "workflow",
+      "script": "res://tools/tests/workflow_order_box.gd",
+      "title": "existing order display follows saved state",
+      "files": [
+        "scripts/basement.gd",
+        "scripts/farm_state.gd",
+        "scripts/player.gd",
+        "scripts/bulkhead_crank.gd",
+        "scripts/mechanical_lever.gd",
+        "scripts/farm_pickup.gd",
+        "scripts/basement_input.gd"
+      ],
+      "depends_on": [
+        "unit_c3_story"
+      ]
+    }
+  }
+}

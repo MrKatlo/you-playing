@@ -1,0 +1,22 @@
+[
+  {
+    "asset": "mining_cart",
+    "triangles": 1368,
+    "valid": true
+  },
+  {
+    "asset": "trading_terminal",
+    "triangles": 872,
+    "valid": true
+  },
+  {
+    "asset": "parts_cabinet",
+    "triangles": 872,
+    "valid": true
+  },
+  {
+    "asset": "echo_hunter",
+    "triangles": 3984,
+    "valid": true
+  }
+]

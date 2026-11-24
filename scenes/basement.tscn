@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dnkxcvighylkc"]
+
+[ext_resource type="Script" uid="uid://coxceqmyrnctr" path="res://scripts/basement.gd" id="1_basement"]
+
+[node name="TheBasement" type="Node3D" unique_id=917810945]
+script = ExtResource("1_basement")

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "bulkhead_crank",
+    "file": "bulkhead_crank.glb",
+    "triangles": 2184,
+    "dimensions_m": [
+      0.34,
+      0.68,
+      0.2435
+    ],
+    "validated": true
+  },
+  {
+    "id": "bulkhead_crank_wheel",
+    "file": "bulkhead_crank_wheel.glb",
+    "triangles": 5928,
+    "dimensions_m": [
+      0.3367,
+      0.33,
+      0.167
+    ],
+    "validated": true
+  },
+  {
+    "id": "shutter_chain_broken",
+    "file": "shutter_chain_broken.glb",
+    "triangles": 8776,
+    "dimensions_m": [
+      0.12,
+      0.67,
+      0.088
+    ],
+    "validated": true
+  },
+  {
+    "id": "shutter_chain_repaired",
+    "file": "shutter_chain_repaired.glb",
+    "triangles": 8760,
+    "dimensions_m": [
+      0.12,
+      0.67,
+      0.088
+    ],
+    "validated": true
+  },
+  {
+    "id": "replacement_chain_link",
+    "file": "replacement_chain_link.glb",
+    "triangles": 1048,
+    "dimensions_m": [
+      0.077,
+      0.116,
+      0.033
+    ],
+    "validated": true
+  }
+]

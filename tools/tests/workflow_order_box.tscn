@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://tools/tests/workflow_order_box.gd" id="1_suite"]
+
+[node name="WorkflowOrderBox" type="Node"]
+script = ExtResource("1_suite")
